@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", "system-ui"; /*endast för demo */
+        }
+
+        h2 {
+            color: Gray;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        .square-wrapper {
+            margin: 0 auto;
+
+            max-width: 220px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+        }
+
+
+        .square {
+           border: 1px solid #c6c6c6;
+            color: Gray;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr 47px;
+      
+            align-items: center;
+            justify-items: flex-start;
+            padding-left: 1rem;
+            font-weight: 600;
+        }
+
+        .square img {
+            height: 40px;
+            width: auto;
+        }
+
+        .back {
+            color: rgb(255, 195, 108);
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+    <h2> Välj jobbtyp</h2>
+
+    <div class="square-wrapper">
+        <div class="square">Bärgning<img src="green_arrow.png"/></div>
+        <div class="square">TMA<img src="green_arrow.png"/></div>
+        <div class="square">Transport<img src="green_arrow.png"/></div>
+        <div class="square">Multitransport<img src="green_arrow.png"/></div>
+    </div>
+    <p class="back"> Tillbaka</p>
+</body>
+</html>
